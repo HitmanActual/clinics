@@ -25,6 +25,7 @@ class CreateClinicsTable extends Migration
             $table->float('regular_price');
             $table->float('urgent_price');
             $table->integer('phone');
+            $table->integer('limit')->unsigned(); // the clinic capacity per day
             $table->timestamps();
         });
     }
