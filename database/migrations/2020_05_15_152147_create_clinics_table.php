@@ -27,6 +27,7 @@ class CreateClinicsTable extends Migration
             $table->integer('phone');
             $table->integer('limit')->unsigned(); // the clinic capacity per day
             $table->timestamps();
+            $table->timestamp('deleted_at')->nullable();
         });
     }
 
